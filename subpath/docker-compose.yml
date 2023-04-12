@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  hello-world-nested:
+    container_name: hello-world-nested
+    image: hello-world
+    networks:
+      - hello-world
+    profiles:
+      - foo
+
+networks:
+  hello-world:

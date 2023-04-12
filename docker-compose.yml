@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  hello-world-base:
+    container_name: hello-world-base
+    image: hello-world
+    networks:
+      - hello-world
+
+networks:
+  hello-world:
